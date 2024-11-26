@@ -1,0 +1,22 @@
+import java.util.Scanner;
+
+public class SleepyCowHerding {
+    public static void main(String[] args){
+        Scanner scanner = new Scanner(System.in);
+        int nextNum = scanner.nextInt();
+        int result = 0;
+        int [] array = new int [nextNum];
+
+        for (int i=0;i<nextNum;i++){
+            array[i] = scanner.nextInt();
+        }
+        for (int i=0;i<nextNum-1;i++){
+            if(array[i]>=array[i+1]){
+                result=i+1;
+            }
+        }
+        System.out.println(result);
+        scanner.close();
+
+    }
+}
