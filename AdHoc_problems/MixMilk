@@ -13,7 +13,13 @@ public class MixMilk {
             numCaps[i] = scanner.nextInt();
             milk[i] = scanner.nextInt();
         }
-        
+        for (int i=0;i<POUR;i++){
+            int beginning = i%BUCKETS;
+            int end = (i+1)%BUCKETS;
+            int provide = Math.min(milk[beginning],numCaps[end]-milk[end]);
+            milk[beginning]-=provide;
+            milk[end]+=provide;
+        }
 
     }
 
