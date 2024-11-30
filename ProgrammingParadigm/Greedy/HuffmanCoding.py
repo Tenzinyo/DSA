@@ -15,3 +15,14 @@ class node:
   def _lt_(self,next):
     return self.freq<next.freq
     
+def nodesOutput(node, value=''): 
+    newValue= val + str(node.huffman) 
+    if(node.left): 
+      # next= newValue
+      nodesOutput(node.left, newValue) 
+    if(node.right): 
+      nodesOutput(node.right, newValue) 
+    if(not node.left and not node.right): 
+      print(f"{node.symbol} -> {newVal}") 
+  
+  
