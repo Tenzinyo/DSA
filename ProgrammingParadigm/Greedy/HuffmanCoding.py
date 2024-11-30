@@ -25,4 +25,6 @@ def nodesOutput(node, value=''):
     if(not node.left and not node.right): 
       print(f"{node.symbol} -> {newVal}") 
   
-  
+chars = ['a', 'b', 'c', 'd', 'e', 'f'] 
+freq = [5, 9, 12, 13, 16, 45] 
+nodes = []
