@@ -14,3 +14,4 @@ def knapsackProblem(w, arr):
     else:
       result +=i.profit*(w/i.weight)
   return result
+
