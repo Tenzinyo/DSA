@@ -1,0 +1,2 @@
+def BinarySearch():
+	#center value, i pointer and j pointer reference
