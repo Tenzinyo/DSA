@@ -1,0 +1,22 @@
+explore(u):
+  u.visited = True
+  for each node v adjacent to u:
+    if not v.visited:
+      explore(v)
+    else:
+      ancester =u.parent
+      while ancester:
+        if ancester == v:
+          has_cycle = True
+          break
+        ancestor = ancestor.parent
+
+isAcyclic(g):
+  for v in g.vertices:
+    v.visited=False
+    v.parent = None
+  hasCycle = False
+  for v in G.vertices:
+    if not v.visited:
+      explore(v)
+  return not hasCycle
